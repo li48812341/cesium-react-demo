@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.map-wrapper,
+.cesium-container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.leaflet-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Cesium 相关样式 */
+.cesium-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+.cesium-viewer-cesiumWidgetContainer {
+  width: 100%;
+  height: 100%;
+}

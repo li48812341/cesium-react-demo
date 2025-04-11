@@ -1,0 +1,47 @@
+{
+  "name": "cesium-react-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cesium": "^1.125.0",
+    "cra-template": "1.2.0",
+    "leaflet": "^1.9.4",
+    "mapbox-gl": "^2.15.0",
+    "ol": "^8.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "resium": "^1.18.3",
+    "@types/leaflet": "^1.9.8"
+  },
+  "scripts": {
+    "start": "set \"GENERATE_SOURCEMAP=false\" && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "powershell -Command \"Copy-Item -Path './node_modules/cesium/Build/CesiumUnminified/*' -Destination './public/' -Recurse -Force\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "mapbox-gl": "^2.15.0"
+  }
+}
